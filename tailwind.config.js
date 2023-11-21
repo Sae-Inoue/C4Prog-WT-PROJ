@@ -4,6 +4,10 @@ module.exports = {
       './*/html'
   ],
   theme: {
+    colors:{
+      'Byzantine blue':'#334DD1',
+      'Jonquil': '#FFCC14',
+},
     extend: {},
   },
   plugins: [],
