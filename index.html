@@ -3,30 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>SAE INOUE</title>
     <link rel="stylesheet" href="/Assets/css/site.css">
 </head>
 <body>
         <header class="sticky top-0 flex flex-col justify-between md:p-10 mx-auto md:flex-row md:gap-2 bg-white text-black border-b-2 md:border-t-16 border-t-2 border-black">
-            <a class="flex items-center  mb-4 font-medium title-font md:mb-0 gap-2" href=".">
-                <h1 class="pl-2 pt-2 text-2xl md:text-6xl font-bold">SAE INOUE</h1>
+            <a class="mb-4 font-medium title-font md:mb-0 gap-2" href=".">
+                <h1 class="hidden md:flex pl-2 pt-2 text-2xl md:text-6xl font-bold">SAE INOUE</h1>
+            </a>
 
-                <div class="flex md:hidden items-center">
-                    <button class="outline-none mobile-menu-button">
-                        <svg class=" w-6 h-6 text-gray-500 hover:text-black"
-                             fill="none"
-                             stroke-linecap="round"
-                             stroke-linejoin="round"
-                             stroke-width="2"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor"
-                        >
-                            <path d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
+            <div class="flex md:hidden justify-between">
+                    <a class="mb-4 font-medium title-font md:mb-0 gap-2" href=".">
+                        <h1 class="pl-2 pt-2 text-2xl md:text-6xl font-bold">SAE INOUE</h1>
+                    </a>
+
                     <!--Mobile menu-->
-                    <nav class="w-full hidden md:block absolute items-center md:static md:bg-none z-20 mobile-menu">
-                        <ul class="flex flex-col items-center mt-4 space-y-4 align-middle">
+                    <nav class="hidden md:block items-center md:static md:bg-none z-20 mobile-menu">
+                        <ul class="font-extrabold flex flex-col items-center mt-6 space-y-4 align-middle">
                             <li class="active"><a href=".">HOME</a></li>
                             <li class=""><a href="about.html">ABOUT</a></li>
                             <li class=""><a href="resume.html">RESUME</a></li>
@@ -34,8 +28,20 @@
                             <li class=""><a href="contact.html" >LET'S CHAT</a></li>
                         </ul>
                     </nav>
+
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-black hover:text-black"
+                             fill="none"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             stroke-width="2"
+                             viewBox="0 0 24 24"
+                             stroke="currentColor">
+
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-            </a>
             <!--Desktop menu-->
             <nav>
                 <ul class="hidden md:flex md:ml-auto md:space-x-7 font-extrabold md:pt-10 md:text-xl ">
