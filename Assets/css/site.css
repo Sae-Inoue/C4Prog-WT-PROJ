@@ -550,16 +550,8 @@ video {
   order: 9999;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
-.float-left {
-  float: left;
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .mx-auto {
@@ -575,100 +567,68 @@ video {
   margin-top: 1.5rem;
 }
 
-.ms-auto {
-  margin-inline-start: auto;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .h-32 {
   height: 8rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.h-6 {
+  height: 1.5rem;
 }
 
-.w-20 {
-  width: 5rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-16 {
-  width: 4rem;
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-32 {
   width: 8rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.w-6 {
+  width: 1.5rem;
 }
 
-.max-w-full {
-  max-width: 100%;
+.w-10 {
+  width: 2.5rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.flex-grow {
-  flex-grow: 1;
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
+.place-content-center {
+  place-content: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
+.items-center {
+  align-items: center;
 }
 
 .justify-end {
@@ -683,16 +643,16 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .justify-items-center {
   justify-items: center;
 }
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-7 > :not([hidden]) ~ :not([hidden]) {
@@ -738,9 +698,9 @@ video {
   padding: 1.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-3 {
@@ -767,6 +727,14 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -784,6 +752,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -831,6 +804,21 @@ video {
     order: 0;
   }
 
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .md\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .md\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -859,12 +847,16 @@ video {
     display: none;
   }
 
+  .md\:h-48 {
+    height: 12rem;
+  }
+
   .md\:h-32 {
     height: 8rem;
   }
 
-  .md\:h-48 {
-    height: 12rem;
+  .md\:w-48 {
+    width: 12rem;
   }
 
   .md\:w-auto {
@@ -875,20 +867,12 @@ video {
     width: 8rem;
   }
 
-  .md\:w-48 {
-    width: 12rem;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
   }
 
   .md\:gap-2 {
@@ -921,6 +905,30 @@ video {
     padding-top: 2.5rem;
   }
 
+  .md\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .md\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -930,19 +938,21 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-48 {
-    height: 12rem;
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .lg\:h-56 {
     height: 14rem;
-  }
-
-  .lg\:w-48 {
-    width: 12rem;
   }
 
   .lg\:w-56 {
